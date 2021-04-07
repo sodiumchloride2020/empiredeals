@@ -24,7 +24,7 @@ class CommandHandler extends EventEmitter {}
 const commandHandler = new CommandHandler();
 
 bot.onText(new RegExp('^/start$'), async msgEvent => {
-  let reply = 'Welcome to MultiFeed Bot! 🔥\n\n';
+  let reply = 'Welcome to EmpireDeals.in Bot! 🔥\n\n';
   reply += 'Send /help to get usage instructions';
   bot.sendMessage(msgEvent.chat.id, reply).catch(logger.error);
 
